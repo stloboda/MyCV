@@ -1,0 +1,19 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "index.html",
+    "tun": "lt --port 5500",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stanislav Loboda",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.6.0"
+  },
+  "dependencies": {
+    "localtunnel": "^2.0.2"
+  }
+}
