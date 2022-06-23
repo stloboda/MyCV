@@ -10,8 +10,8 @@ body {
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
+  /* position: fixed;
+  top: 0; */
   z-index: 1;
   display: flex;
   align-items: center;
@@ -48,7 +48,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 2rem 0 2rem;
 }
 
 .nav-link a {
@@ -89,7 +88,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   justify-content: space-around;
   background: #000000;
 }
@@ -336,7 +334,10 @@ ul {
   }
 }
 
-@media (max-width: 808px) {
+@media (max-width: 801px) {
+  .navbar {
+    position: relative;
+  }
   .nav-links {
     position: absolute;
     right: 0px;
@@ -387,12 +388,94 @@ ul {
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+
+  .tech-skill {
+    height: 110vh;
+  }
+
+  .skills {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 767px) {
+  .title {
+    height: 110vh;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 622px) {
+  .title {
+    height: 120vh;
+  }
+
+  .title-main {
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .name-main {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+  .text-main {
+    align-items: center;
+    width: 100%;
+    line-height: 144%;
+    text-align: center;
+  }
+
+  .btn,
+  a.btn {
+    margin-top: 30px;
+    margin-left: 80px;
+    align-items: center;
+  }
+
+  .img-main img {
+    height: 300px;
+  }
+
+  .tech-skill {
+    height: 120vh;
+  }
+
+  .education {
+    height: 120vh;
+  }
+
+  .about {
+    margin-top: 80px;
+    width: 80%;
+  }
+
+  .about-name {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .personal-skills {
+    height: 80vh;
+  }
+
+  .personal-list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+    gap: 30px;
   }
 }
 
