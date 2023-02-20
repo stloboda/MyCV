@@ -211,12 +211,15 @@ section {
 }
 
 .personal-skills {
-  height: 50vh;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .personal-title {
-  text-align: center;
-  margin-top: 30px;
+  justify-content: center;
+  display: flex;
 }
 
 .personal-name {
@@ -225,10 +228,14 @@ section {
 }
 
 .personal-list {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 20px;
   display: flex;
+}
+
+.personal-list .item {
+  margin: 60px;
 }
 
 .personal-item ul {
@@ -444,7 +451,6 @@ ul {
 
   .about {
     width: 80%;
-    margin-top: 80px;
   }
 
   .about-name {
@@ -460,7 +466,12 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
+    margin-top: 50px;
     margin-left: 30px;
+  }
+
+  .personal-list .item {
+    margin: 0;
   }
 }
 
