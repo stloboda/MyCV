@@ -1,2 +1,0 @@
-const navSlide=()=>{const e=document.querySelector(".burger"),t=document.querySelector(".nav-links"),n=document.querySelectorAll(".nav-links li");e.addEventListener("click",(()=>{t.classList.toggle("nav-active"),n.forEach(((e,t)=>{e.style.animation?e.style.animation="":e.style.animation=`navLinkFade 0.5s ease forwards ${t/7+.3}s`})),e.classList.toggle("toggle")}))};navSlide(),$(".navbar a").on("click",(function(e){if(""!==this.hash){e.preventDefault();const t=this.hash;$("html, body").animate({scrollTop:$(t).offset().top},1e3)}}));
-//# sourceMappingURL=index.b0dff9af.js.map
